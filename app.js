@@ -10,7 +10,7 @@ const date = require(__dirname + '/date.js') // created own date module
 
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 const todoTasks = [];
 const work = [];
 const day = date.getDate();
